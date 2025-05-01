@@ -11,6 +11,8 @@
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" >
     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta charset="utf-8" >
     <meta name="description" content="WebStudio description meta tag content" >
     <title>WebStudio</title>
@@ -36,12 +38,81 @@
                   <li><a href="tel:+110001111111" class="contacts">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+
+            <button class="mobile-menu-btn" type="button">
+              <svg class="mobile-menu-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-burger-menu">
+                </use>
+              </svg>
+            </button>
+
+          </div>
+
+          <div class="mobile-menu">
+            <div class="container mobile-menu-container">
+              <button class="close-btn mobile-close-btn" type="button">
+                <svg class="close-icon" width="8" height="8">
+                  <use href="./images/icons.svg#icon-close">
+                  </use>
+                </svg>
+              </button>
+
+              <nav class="mobile-nav header-nav">
+                <ul class="mobile-nav-list">
+                    <li class="nav-item"><a href="./index.html" class="mobile-nav-link nav-link current">Studio</a></li>
+                    <li class="nav-item"><a href="" class="mobile-nav-link nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="" class="mobile-nav-link nav-link">Contacts</a></li>
+                </ul>
+              </nav>
+
+          <div class="mobile-nav-footer">
+                <address class="mobile-contact-us">
+                    <ul class="mobile-contact-us-list contact-us-list">
+                      <li><a href="tel:+110001111111" class="mobile-contacts contacts current">+11 (000) 111-11-11</a></li>
+                      <li><a href="mailto:info@devstudio.com" class="mobile-contacts contacts">info@devstudio.com</a></li>
+                    </ul>
+                </address>
+
+                <ul class="mobile-social-list">
+                  <li class="team-social-item">
+                    <a class="team-social-item-link" href="" target="_blank" rel="noopener noreferrer">
+                      <svg class="team-social-item-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-item">
+                    <a class="team-social-item-link" href="" target="_blank" rel="noopener noreferrer">
+                      <svg class="team-social-item-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-item">
+                    <a class="team-social-item-link" href="" target="_blank" rel="noopener noreferrer">
+                      <svg class="team-social-item-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-item">
+                    <a class="team-social-item-link" href="" target="_blank" rel="noopener noreferrer">
+                      <svg class="team-social-item-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+                
+          </div>
+            </div>
           </div>
     </header>
 
     <main>
 
-      <section class="main section">
+      <section class="main section hidden">
       <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button type="button" class="order-btn">Order Service</button>
@@ -276,7 +347,7 @@
         </div>
       </section>
 
-      <section class="portfolio section">
+      <section class="portfolio section hidden">
         <div class="container">
           <h2 class="sect-title">Our portfolio</h2>
           <ul class="portfolio-list">
@@ -405,13 +476,13 @@
           </ul>
         </div>
         <div class="subscribe">
-          <p class="subcribe-title">Subscribe</p>
+          <p class="subscribe-title">Subscribe</p>
           <form class="subscribe-form">
                         
             <label class="input-label">
               <input class="input-email" name="footer-input-email" type="email" placeholder="E-mail">
             </label>
-            <button class="subscribe-btn" type="submit">Subscribe
+            <button class="subscribe-btn order-btn" type="submit">Subscribe
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -421,7 +492,7 @@
       </div>
     </footer>
 
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay is-open hidden">
       <div class="modal">
 
         <button class="close-btn" type="button">
