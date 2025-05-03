@@ -9,6 +9,7 @@ body {
 }
 
 /* reset */
+
 a {
   text-decoration: none;
 }
@@ -73,6 +74,9 @@ button {
     padding: 0 15px;
   }
 }
+
+/* header */
+
 .header {
   background: #fff;
   border-bottom: 1px solid #e7e9fc;
@@ -223,6 +227,7 @@ button {
   visibility: visible;
   pointer-events: all;
 }
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -682,7 +687,8 @@ button {
   margin: 0 auto;
 }
 .input-email {
-  border: 1px solid #fff;
+  outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 264px;
   height: 40px;
@@ -693,11 +699,11 @@ button {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
-  opacity: 0.3;  
+ 
 }
 .input-email::placeholder {
-  color: #fff;
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.6);
+  
 }
 @media screen and (min-width: 768px) {
 .footer-container {
