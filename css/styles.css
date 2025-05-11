@@ -527,9 +527,10 @@ button {
 
 .our-team {
   background-color: #f4f4fd;
-  padding-left: 12px;
-  padding-right: 12px;
   margin: 0 auto;
+}
+.our-team-container {
+  max-width: 264px;
 }
 .our-team-list {
   display: flex;
@@ -573,30 +574,22 @@ button {
   fill: #f4f4fd;
 }
 @media screen and (min-width: 768px) {
-  .our-team {
-    padding-left: 92px;
-    padding-right: 92px;
-}
-.our-team-list {
+  .our-team-container {
   max-width: 552px;
-  margin: 0 auto;
+}
+  .our-team-list {
   row-gap: 64px;
   column-gap: 24px;
 }
-.our-team-item {
+  .our-team-item {
   width: calc((100% - 24px) / 2);
 }
 }
 @media screen and (min-width: 1158px) {
-  .section {
-    padding: 120px 0;
-    width: 100%;
+  .our-team-container {
+    max-width: 1128px;
   }
-.our-team {
-  max-width: 1440px;
-}
 .our-team-list {
-  max-width: 1128px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
